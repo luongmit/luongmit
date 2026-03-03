@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C -> F" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F -> C" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Tab 1: C to F -->
+        <LinearLayout
+            android:id="@+id/layoutCtoF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuyển đổi độ C sang độ F"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+            <EditText
+                android:id="@+id/edtCelsius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập độ C"
+                android:inputType="numberDecimal|numberSigned" />
+            <Button
+                android:id="@+id/btnCalcCtoF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tính toán"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnClearCtoF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xóa"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:id="@+id/tvResultCtoF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kết quả: "
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+        <!-- Tab 2: F to C -->
+        <LinearLayout
+            android:id="@+id/layoutFtoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuyển đổi độ F sang độ C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+            <EditText
+                android:id="@+id/edtFahrenheit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập độ F"
+                android:inputType="numberDecimal|numberSigned" />
+            <Button
+                android:id="@+id/btnCalcFtoC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tính toán"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnClearFtoC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xóa"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:id="@+id/tvResultFtoC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kết quả: "
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
