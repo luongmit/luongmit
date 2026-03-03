@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUẢN LÝ SINH VIÊN"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etSVName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ tên sinh viên"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etBirthYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Năm sinh"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lớp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAddSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM SINH VIÊN"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnViewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XEM DANH SÁCH"
+        android:backgroundTint="@color/teal_700"/>
+
+</LinearLayout>

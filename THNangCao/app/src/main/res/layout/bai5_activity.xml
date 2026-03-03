@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRẮC NGHIỆM KIẾN THỨC"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"/>
+
+        <!-- Question 1 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Câu 1: Thủ đô của Việt Nam là gì?" android:textStyle="bold" android:layout_marginTop="8dp"/>
+        <RadioGroup android:id="@+id/rgQ1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TP. Hồ Chí Minh"/>
+            <RadioButton android:id="@+id/q1b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hà Nội"/>
+            <RadioButton android:id="@+id/q1c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đà Nẵng"/>
+            <RadioButton android:id="@+id/q1d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Huế"/>
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Câu 2: 1 + 1 = ?" android:textStyle="bold" android:layout_marginTop="16dp"/>
+        <RadioGroup android:id="@+id/rgQ2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+            <RadioButton android:id="@+id/q2b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2"/>
+            <RadioButton android:id="@+id/q2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3"/>
+            <RadioButton android:id="@+id/q2d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4"/>
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Câu 3: Ngôn ngữ lập trình chính cho Android?" android:textStyle="bold" android:layout_marginTop="16dp"/>
+        <RadioGroup android:id="@+id/rgQ3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Swift"/>
+            <RadioButton android:id="@+id/q3b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Java/Kotlin"/>
+            <RadioButton android:id="@+id/q3c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Python"/>
+            <RadioButton android:id="@+id/q3d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PHP"/>
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Câu 4: HTML là gì?" android:textStyle="bold" android:layout_marginTop="16dp"/>
+        <RadioGroup android:id="@+id/rgQ4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HyperText Markup Language"/>
+            <RadioButton android:id="@+id/q4b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="High Tech Modern Language"/>
+            <RadioButton android:id="@+id/q4c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hyper Transfer Main Line"/>
+            <RadioButton android:id="@+id/q4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home Tool Markup Language"/>
+        </RadioGroup>
+
+        <!-- Question 5 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Câu 5: CPU là gì?" android:textStyle="bold" android:layout_marginTop="16dp"/>
+        <RadioGroup android:id="@+id/rgQ5" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q5a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Computer Personal Unit"/>
+            <RadioButton android:id="@+id/q5b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Central Processing Unit"/>
+            <RadioButton android:id="@+id/q5c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Control Process Utility"/>
+            <RadioButton android:id="@+id/q5d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Central Power Unit"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmitQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NỘP BÀI"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

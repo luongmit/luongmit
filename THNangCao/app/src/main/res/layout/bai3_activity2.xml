@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HÓA ĐƠN ĐẶT VÉ"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvBillCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khách hàng: "
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvBillMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phim: "
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvBillTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suất chiếu: "
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvBillCombo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combo: "
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvBillTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TỔNG TIỀN: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D81B60"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnBackBai3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUAY LẠI"/>
+
+</LinearLayout>

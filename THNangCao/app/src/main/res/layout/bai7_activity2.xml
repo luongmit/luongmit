@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HÓA ĐƠN THANH TOÁN"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvHotelGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khách hàng: "
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvHotelID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CMND: "
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvHotelRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại phòng: "
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvHotelDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số ngày ở: "
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvHotelService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dịch vụ: "
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvHotelDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giảm giá: "
+        android:textSize="18sp"
+        android:textColor="#E91E63"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvHotelTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TỔNG CỘNG: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FF9800"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnBackBai7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUAY LẠI"/>
+
+</LinearLayout>

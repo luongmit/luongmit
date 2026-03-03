@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ĐẶT PHÒNG KHÁCH SẠN"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etGuestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ tên khách hàng"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etIDCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số CMND/CCCD"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại phòng:"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/rgRoomType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <RadioButton android:id="@+id/rbStandard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Standard (300k)" android:checked="true"/>
+            <RadioButton android:id="@+id/rbDeluxe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Deluxe (500k)"/>
+            <RadioButton android:id="@+id/rbSuite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Suite (800k)"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etStayDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số ngày ở"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dịch vụ thêm:"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <CheckBox android:id="@+id/cbBreakfast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ăn sáng (+50k/ngày)"/>
+        <CheckBox android:id="@+id/cbLaundry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Giặt ủi (+30k/ngày)"/>
+
+        <Button
+            android:id="@+id/btnBookRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THANH TOÁN"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF9800"/>
+
+    </LinearLayout>
+</ScrollView>
